@@ -1,0 +1,81 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Lucida Grande", Geneva, Verdana, sans-serif;
+}
+body {
+  font-size: 1.6rem;
+}
+/* practice-1 */
+/* How to color the tags */
+
+.Practice {
+  border: solid 2px #074d6357;
+  margin: 2rem;
+  padding: 1rem;
+}
+.paragraph {
+  margin-top: 1rem;
+  color: darkcyan;
+}
+/* practice-2 */
+/* How to use a and li tags */
+ul {
+  margin: 2rem;
+}
+Ul li {
+  list-style: none;
+  text-decoration: none;
+  margin:2rem;
+}
+li a:hover {
+  border-bottom: 0.1rem solid #074d6357;
+}
+li a {
+  text-decoration: none;
+  color: #474747;
+  padding: 0.8rem;
+}
+/* animation */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
+}
+.animation {
+  width: 10rem;
+  height: 10rem;
+  background-color: #09fd09;
+  animation-name: moveRight;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes moveRight {
+  0% {
+    opacity: 0;
+    transform: translateX(60rem);
+    background-color: aqua;
+  }
+  30% {
+    background-color: rgb(0, 255, 242);
+  }
+  60% {
+    opacity: 1;
+    width: 20rem;
+  }
+  80% {
+    background-color: rgb(0, 255, 179);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0);
+    background-color: rgb(127, 255, 148);
+  }
+}
