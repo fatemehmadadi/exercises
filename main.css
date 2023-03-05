@@ -32,7 +32,7 @@ ul {
 Ul li {
   list-style: none;
   text-decoration: none;
-  margin:2rem;
+  margin: 2rem;
 }
 li a:hover {
   border-bottom: 0.1rem solid #074d6357;
@@ -43,6 +43,7 @@ li a {
   padding: 0.8rem;
 }
 /* animation */
+
 .container {
   display: flex;
   align-items: center;
@@ -78,4 +79,84 @@ li a {
     transform: translateX(0);
     background-color: rgb(127, 255, 148);
   }
+}
+/* practice5 */
+/* How to use form */
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#login_form {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffff;
+  height: 50vh;
+  width: 40vw;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  background-image: linear-gradient(to bottom, #4526d3e0, #8029c7e0, #ac20ace0);
+  box-shadow: 0 2rem 2rem #6b6b6b;
+}
+.form-group {
+  margin: 2rem 0;
+}
+.form-group label {
+  letter-spacing: 0.2rem;
+  font-size: 1.4rem;
+}
+.form-group #email,
+.form-group #password {
+  font-size: inherit;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  width: 20rem;
+  border: none;
+  margin-top: 1rem;
+  padding: 0 0 0 1rem;
+}
+.form-group #email:focus,
+.form-group #password:focus {
+  outline: none;
+  border: 1px solid #fd1909;
+}
+.submit_btn {
+  cursor: pointer;
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: inherit;
+  padding: 0.5rem 4rem;
+}
+.submit_btn:hover {
+  font-weight: 300;
+  background-color: #ffff;
+  color: #3611da;
+  transition: all 0.2s;
+}
+/* practice6*/
+/* How to use table */
+.table_box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+#table {
+  text-align: center;
+  padding: 1rem;
+}
+td, th{
+  padding: 1rem;
+}
+tr:nth-child(odd) {
+  background-color: #84c6e0;
+}
+tr:nth-child(even) {
+  background-color: #84e084;
 }
